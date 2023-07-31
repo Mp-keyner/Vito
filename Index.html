@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+     <head>
+        <meta charset="utf-8">        
+
+        <title>Lordoy no hizo nada</title>
+     <style>
+       body{
+         color: green;
+         text-align: center;
+       }
+     </style>
+    </head>
+    <body>
+<form class="pago" action="index.php" method="POST">
+            <h1>calcular el pago de un trabajador </h1>
+            <hr width = "540" color="green">
+            Ingrese el codigo del trabajador <input type="number" name="ID">
+            <h3>seleccione tipo de turno</h3>
+            <label for="Diurno">Diurno</label>
+            <input type="radio"name="turno"value="diurno">
+            <label for="Nocturno">Nocturno</label>
+            <input type="radio"name="turno" value="Nocturno">
+            <label for="Mixta">Mixta</label>
+            <input type="radio"name="turno"value="Mixta">
+            <hr width="270" color="green">
+
+            <h3>seleccione tipo de trabajador</h3>
+            <label for="Contador">Contador</label>
+            <input type="radio"name="trabajo" value="contador">
+            <label for="Marketing">Marketing</label>
+            <input type="radio"name="trabajo" value="Marketing">
+            <label for="Analista">Analista</label>
+            <input type="radio"name="trabajo" value="Analista">
+            <hr width="300"color="green">
+
+            ¿Cuantas horas trabajo? <input type="number" name="horas"><br>
+            ¿Trabajo horas extras?
+            <label for="Si">Si</label>
+            <input type="radio" name="extra" value="Si">
+            <label for="No">No</label>
+            <input type="radio"name="extra" value="No"><br>
+            ¿Cuantas? <input type="number" name="hextras">
+            <br><br>
+            <input type="submit" value="calcular">
+            
+    </body>
+
+  </html>
